@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: #ADD8E6;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0%;
+        }
+
+        p {
+            left: 6%;
+            color: #2f4f4f;
+            position: absolute;
+        }
+
+        header {
+            position: absolute;
+            background-color: #fff;
+            width: 100%;
+            text-align: center;
+        }
+
+        #btn {
+            display: flex;
+            padding: 0%;
+            margin-top: 0%;
+            list-style: none;
+            width: 100%;
+            position: absolute;
+        }
+
+        #btn li {
+            width: calc(100% / 2);
+            padding: 13px;
+            border: 1px solid #999;
+            background: #fff;
+            color: black;
+        }
+
+        #btn1 {
+            background-color: #fff;
+            border: solid 2px #2f4f4f;
+            color: #2f4f4f;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        #btn1:hover {
+            color: #2f4f4f;
+            background-color: #b0e0e6;
+        }
+
+        #square {
+            margin-top: 100px;
+            margin-left: 10%;
+            width: 80%;
+            height: 80%;
+            border-radius: 10px;
+            background-color: #fff;
+            display: flex;
+            position: absolute;
+        }
+
+        #button {
+            top: 80%;
+            left: 10%;
+            width: 80%;
+            height: 10%;
+            border-radius: 40px;
+            border: none;
+            background-color: #FFD1DC;
+            position: absolute;
+        }
+
+        #button:hover {
+            color: #2f4f4f;
+            background-color: #FFD1AA;
+        }
+
+        #cont {
+            display: flex;
+            padding: 0%;
+            margin-top: 0%;
+            list-style: none;
+            width: 100%;
+            position: absolute;
+        }
+
+        #cont li {
+            width: calc(100% / 2);
+            padding: 13px;
+            border: 1px solid #999;
+            background: #fff;
+            color: black;
+        }
+
+        #cont {
+            display: flex;
+            padding: 0%;
+            margin-top: 0%;
+            list-style: none;
+            width: 100%;
+            position: absolute;
+        }
+
+        #con:hover {
+            color: #2f4f4f;
+            background-color: #b0e0e6;
+        }
+
+        #list {
+            margin-top: 120px;
+            margin-left: 15%;
+            width: 70%;
+            height: 40%;
+            background-color: #e0dbdb;
+            display: flex;
+            position: absolute;
+        }
+        #con li {
+            width: calc(100% / 2);
+            padding: 13px;
+            border: 1px solid #999;
+            background: #fff;
+            color: black;
+        }
+
+        #res {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #re {
+            padding: 13px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="border"></div>
+        <nav>
+            <ul id="btn">
+                <li id="btn1">問題</li>
+                <li id="btn1">登録</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="/top" method="get" id="square">
+            <div id="list">
+                <ul id="cont">
+                    <li id="con">問題</li>
+                    <li id="con">正解</li>
+                    <li id="con">解答</li>
+                    <li id="con">結果</li>
+                </ul>
+                <ul id="res">
+                    <li id="re">{{.Question}}</li>
+                    <li id="re">{{.Correct}}</li>
+                    <li id="re">{{.Answer}}</li>
+                    <li id="re">{{.Result}}</li>
+                </ul>
+            </div>
+            <button type="submit" id="button">START</button>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,114 @@
+html {
+    background-color: #ADD8E6;
+}
+
+body {
+    margin: 0px;
+    padding: 0%;
+}
+
+p{
+    left: 6%;
+    color: #2f4f4f;
+    position: absolute;
+}
+
+header{
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#btn {
+    display:flex;
+    padding:0%;
+    margin-top: 0%;
+    list-style:none;
+    width: 100%;
+    position: absolute;
+}
+
+#btn li{
+    width: calc(100% / 2);
+    padding: 13px;
+    border:1px solid #999;
+    background: #fff;
+    color: black;
+}
+
+#btn1 {
+    background-color: #fff;
+    border: solid 2px #2f4f4f;
+    color: #2f4f4f;
+    text-decoration: none;
+    font-size: 1em;
+}
+#btn1:hover {
+    color: #2f4f4f;
+    background-color: #b0e0e6;
+}
+
+#square {
+    margin-top: 100px;
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    position: absolute;
+}
+
+#mode {
+    top: 35%;
+    left: 10%;
+    height: 15%;
+    width: 80%;
+    text-align-last: center;
+    appearance: none;
+    position: absolute;
+    font-size: 16px;
+}
+
+#range input{
+    border: 2px #999 solid;
+}
+
+#min {
+    top: 60%;
+    left: 10%;
+    width: 35%;
+    height: 10%;
+    text-align-last: center;
+    position: absolute;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#max {
+    top: 60%;
+    left: 55%;
+    width: 35%;
+    height: 10%;
+    text-align-last: center;
+    position: absolute;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#button {
+    top: 80%;
+    left: 10%;
+    width: 80%;
+    height: 10%;
+    border-radius: 40px;
+    border: none;
+    background-color: #FFD1DC;
+    position: absolute;
+}
+
+#button:hover {
+    color: #2f4f4f;
+    background-color: #FFD1AA;
+}
